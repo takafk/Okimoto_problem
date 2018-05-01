@@ -28,6 +28,9 @@ plt.show()
 logtest = np.log(ts) - np.log(ts.shift())
 logdiff = logtest.dropna()
 
+plt.plot(logdiff)
+plt.show()
+
 # 自己相関の計算、プロット
 fig = plt.figure(figsize=(12,8))
 ax1 = fig.add_subplot(211)
